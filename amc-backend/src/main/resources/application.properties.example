@@ -1,0 +1,15 @@
+spring.application.name=amc-bank-day9-final
+server.port=8080
+
+# PostgreSQL connection. Override these values in the Eclipse Run Configuration as needed.
+spring.datasource.url=${DB_URL:jdbc:postgresql://localhost:1234/amc-bank}
+spring.datasource.username=${DB_USERNAME:postgres}
+spring.datasource.password=${DB_PASSWORD}
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# Set a private, sufficiently long value in the Run Configuration environment.
+app.jwt.secret=${JWT_SECRET}
+app.jwt.expiration-ms=3600000

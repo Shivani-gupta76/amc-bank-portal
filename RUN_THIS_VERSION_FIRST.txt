@@ -1,0 +1,14 @@
+AMC BANK INTEGRATED BANKING PORTAL
+
+1. Start PostgreSQL and create the database used by the project:
+   CREATE DATABASE "amc-bank";
+   The example config uses localhost port 1234. Adjust DB_URL if your PostgreSQL setup differs.
+2. Copy amc-backend/src/main/resources/application.properties.example to application.properties in the same folder.
+3. In Eclipse Run Configurations for AmcBankApplication, set DB_PASSWORD and JWT_SECRET under Environment. Set DB_URL or DB_USERNAME there too if your local PostgreSQL settings differ.
+4. Import amc-backend into Eclipse using File > Import > Maven > Existing Maven Projects.
+5. Run AmcBankApplication.java as Spring Boot App. The backend runs at http://localhost:8080.
+6. Open amc-frontend in VS Code or a terminal. Run npm install, then npm run dev.
+7. Open the Vite URL shown in the terminal (usually http://localhost:5173, or http://localhost:5174 if 5173 is busy).
+8. Select Administrator and use the demo login admin / admin123. Create a customer with an initial password to try the customer portal.
+
+This is a local classroom demo. Do not use its demo credentials or product workflows as real banking services. Keep application.properties untracked; it contains local credentials. Commit application.properties.example instead.

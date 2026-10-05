@@ -1,0 +1,7 @@
+**/node_modules/
+**/dist/
+**/target/
+**/bin/
+.env
+.env.*
+amc-backend/src/main/resources/application.properties
